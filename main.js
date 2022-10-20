@@ -15,9 +15,9 @@ let cloud2x = 170;
 let cloud2y = 100;
 
 // Animation Loop
-requestAnimationFrame(awd);
+requestAnimationFrame(startingAnimation);
 
-function awd() {
+function startingAnimation() {
     // UPDATE
     // Animate cloud 1
     cloud1x++; // Move Right
@@ -49,7 +49,7 @@ function awd() {
     
 
     // LOOP
-    requestAnimationFrame(awd);
+    requestAnimationFrame(startingAnimation);
 }
 
 document.getElementById("btn1").addEventListener("click", norm);
